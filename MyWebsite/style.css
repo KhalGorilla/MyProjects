@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Redressed', cursive;
   color: black;
   list-style: none;
   text-decoration: none;
@@ -15,37 +15,109 @@ body {
 /*Header*/
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: rgba(199, 202, 214, 0.178);
   border-radius: 50px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 5px;
 }
-.header .logo img {
-  margin: 15px 10px;
-  width: 300px;
+.header .logo span{
+  font-size: 2em;
+  font-style: italic;
+  color: rgb(209, 212, 0);
 }
-.navbar li {
-  display: inline;
-  float: left;
-  margin-top: 10%;
-  margin-right: 40px;
-  list-style: none;
+.header .logo{
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.navbarLinks{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  margin-left: 35%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.navbarLinks li {
+  margin-right:20px;
   font-size: 15pt;
-  padding: 3px;
 }
 
-.navbar a:hover {
+.navbarLinks a:hover {
   color: rgb(236, 232, 28);
   transition: 100ms;
 }
-.navbar li:hover {
+.navbarLinks li:hover {
   transform: scale(1.3);
   transition: 500ms;
+}
+.btnSignUp,.btnLogIn{
+border:2px solid rgb(87, 87, 87);
+ border-radius: 10px;
+ width:70px;
+ height: 35px;
+ color: rgb(105, 105, 105);
+ margin-top: 20px;
+}
+.btnSignUp{
+ margin-left: 570px;
+ background-color: rgba(214, 214, 214, 0.966);
+}
+.btnLogIn{
+  border:2px solid rgb(87, 87, 87);
+  background-color: #98ff5dad;
+  margin-left: 3px;
+}
+.btnSignUp a,.btnLogIn a{
+  font-size: 12pt;
+}
+.btnSignUp a:hover,.btnLogIn a:hover{
+  font-size: 15pt;
 }
 
 /*Content*/
 .content {
-  height: 3000px;
+  width: 80%;  
+  height: 600px;
+  margin-left:8%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.212);
 }
+.header1{
+ text-align: center;
+}
+.box1{
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.paragraph1{
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 115px;
+  background-color: rgba(255, 255, 255, 0.26);
+  font-size: 18pt;
+}
+
+.image1{
+  margin-left: 400px;
+  margin-top: 50px;
+  border-radius: 40px;
+}
+.image1 img{ 
+  width: 450px;
+  height: 450px;
+  border-radius: 40px;
+}
+
 /*Footer*/
 .footer {
   height: 150px;
@@ -54,21 +126,24 @@ body {
   flex-direction: row;
 }
 .footerLinks {
-  margin: 10px 10px;
+  margin-left:10px;
 }
 .footerLinks li {
   margin: 5px;
+  font-size: 15pt;
 }
 .footerLinks a:hover {
-  color: aliceblue;
+  color: rgb(73, 0, 0);
+  font-size: 16pt;
+  font-weight: bold;
 }
 .footerFollow img {
   width: 15%;
   margin-top: 10%;
 }
 .footerFollow img:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .footerFollow {
-  margin-left: 35%;
+  margin-left: 650px;
 }
