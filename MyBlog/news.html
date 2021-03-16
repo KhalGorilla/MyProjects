@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Welcome</title>
+</head>
+<body>
+
+
+<!--Navbar-->
+    <nav  class="navbar"> 
+        <img src="logos/logo.png" class="logo" >
+      
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>          
+        <div class="navbar-links">
+          <ul >  
+        <li class="nav-item"><a href="index.html" >Home</a></li>
+          <li class="nav-item"><a href="maps.html" >Maps</a></li>
+          <li class="nav-item"><a href="news.html" >News</a></li>                    
+          <input type="search" placeholder="Search....." class="nav-item search-bar">
+          <input type="submit" value="GO!" class="nav-item search-button">
+           <div > 
+          <input type="search" placeholder="Search....." class="search-bar-2">
+           <input type="submit" value="GO!" class="search-button-2">
+        </div>
+      </ul>
+        </div> 
+</nav>
+
+
+<div class="newscontent">
+ <div class="new"><a href="#" target="_self"><img src="images/news/DevBlogStreamerMode.jpg"><h3 >DEV BLOG: STREAMER MODE</h3><p>Streamer Mode has arrived in Rainbow Six Siege! Here's everything you need to know</p></a></div>
+ <div class="new"><a href="#"><img src="images/news/R6S_SKU.jpg"><h3 >RAINBOW SIX SIEGE LUNCHES NEW SKU FOR ITS YEAR 6</h3><p>To celebrate the launch of Rainbow Six Siege’s 6th year and several upcoming announcements we have decided to simplify access to new seasonal operators to all players.</p></a></div>
+ <div class="new"><a href="#"><img src="images/news/R6_Y6S1_CrimsonHeist_Flores.jpg"><h3 >MEET FLORES, THE MASTER THIEF</h3><p>“Hey Harry, Gridlock here. Ash was busy, so she asked me to update you on specialist Santiago “Flores” Lucero’s progress.</p></a></div>
+ <div class="new"><a href="#"><img src="images/news/DEVBLOGAntiCheat.jpg"><h3 >DEV BLOG: UPDSATE ON ANTI-CHEAT ON RAINBOW SIX SIEGE</h3><p>Learn about everything we've done regarding anti-cheat since june</p></a></div>
+ <div class="new"><a href="#"><img src="images/news/R6_CodeOfConduct_Header.jpg"><h3 >RAINBOW SIX SIEGE CODE OF CONDUCT</h3><p>Rainbow Six Siege terms of use and code conduct</p></a></div>
+ <div class="new"><a href="#"><img src="images/news/r6ReputationBlogBannerFINAL.jpg"><h3>DEV BLOG: REPUTATION SYSTEM</h3><p>Learn more about the Reputation System in Siege</p></a></div>
+ <div class="new"><a href="#"><img src="images/news/R6_Live_Y5_Arcade_Keyart_Legacy.jpg"><h3>RAINBOW SIX SIEGE HOLIDAY</h3><p>Rainbow Six Siege has now been live for five years and with any anniversary comes a celebration and a look into what we have managed to accomplish.</p></a></div>
+</div>
+
+
+<!--Footer-->
+<footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4 class="footer-heading">Help</h4>
+            <ul class="list-unstyled">
+              <li><a href="#"></a></li>
+              <li><a href="#">Payment Center</a></li>
+              <li><a href="#">Contact Directory</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">News and Updates</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="follow">
+          <h3>Follow Me</h3>
+          <a href="https://www.facebook.com/" class="facebook"><img src="logos/facebook-logo.png" width="40px"></a>
+         <a href="https://twitter.com/" class="twitter"><img src="logos/twitter-logo.png" width="40px"></a>
+         <a href="https://www.youtube.com/" class="youtube"><img src="logos/youtube-logo.png" width="40px"></a>
+         <a href="https://www.instagram.com/" class="instagram"><img src="logos/instagram-logo.png" width="40px"></a>
+       </div>
+ 
+      </div>
+    <div class="row">
+      <div class="col-md-12 copy">
+        <p class="text-center">&copy; Copyright 2021 - Rainbow six siege.  All rights reserved.</p>
+      </div>
+    </div>
+ 
+    </div>
+    </div>
+  </footer>   
+
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    toggleButton.addEventListener('click',() => {navbarLinks.classList.toggle('active')})
+  </script>
+
+</body>
+</html>
