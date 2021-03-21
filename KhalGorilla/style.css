@@ -31,10 +31,7 @@ header {
 .logo-container img {
   width: 90%;
 }
-.navbar-links,
-.logo-container {
-  display: flex;
-}
+
 .logo-container {
   flex: 1;
 }
@@ -42,6 +39,7 @@ nav {
   flex: 3;
 }
 .navbar-links {
+  display: flex;
   justify-content: space-around;
 }
 .navbar-link {
