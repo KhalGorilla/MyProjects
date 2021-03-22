@@ -10,6 +10,7 @@
 
 body {
   background-image: url(bg.jpg);
+  background-repeat: round;
 }
 
 /*
@@ -85,7 +86,7 @@ nav {
 .img-container {
   margin: auto;
   margin-top: 15px;
-  width: 80%;
+  width: 70%;
 }
 .img-container img {
   width: 100%;
