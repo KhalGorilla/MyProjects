@@ -57,19 +57,17 @@ nav {
 .signingBtns {
   margin-right: 1%;
 }
-.signUpBtn {
+.signUpBtn,
+.signInBtn {
   border: 1px solid grey;
   border-radius: 15px;
   background-color: rgb(90, 252, 90);
   outline: none;
-  padding: 10px;
+  padding: 8px;
+  font-size: 12pt;
 }
 .signInBtn {
-  border: 1px solid grey;
-  border-radius: 15px;
   background-color: rgb(237, 238, 237);
-  outline: none;
-  padding: 10px;
 }
 .signUpBtn:hover {
   background-color: rgb(86, 207, 86);
@@ -187,6 +185,7 @@ nav {
   .signUpBtn,
   .signInBtn {
     padding: 3px;
+    font-size: 10pt;
   }
   .signUpBtn:hover,
   .signInBtn:hover {

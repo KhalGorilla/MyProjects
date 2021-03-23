@@ -11,7 +11,8 @@ body {
   -webkit-animation: move 10s ease infinite;
   animation: move 10s ease infinite;
   transform: translate3d(0, 0, 0);
-  background: linear-gradient(45deg, #d9db39 20%, #78a2c4 80%);
+  background-image: url(bg.jpg);
+  /*background: linear-gradient(45deg, #d9db39 20%, #78a2c4 80%);*/
   height: 90vh;
 }
 
@@ -79,6 +80,7 @@ body {
 }
 .btn:hover {
   background: #a09486;
+  cursor: pointer;
 }
 
 @-webkit-keyframes NO {
@@ -156,7 +158,7 @@ body {
     background-position: 0 0;
   }
   50% {
-    background-position: 100% 0;
+    background-position: 30% 0;
   }
   100% {
     background-position: 0 0;
