@@ -26,10 +26,12 @@ header {
 }
 .logo-container {
   margin: 5px 0px 5px 20px;
+
   flex: 1;
 }
-.logo-container img {
-  max-width: 150px;
+.logo-container p {
+  font-size: 24pt;
+  color: rgb(236, 232, 28);
 }
 .navbar-links,
 .logo-container {
@@ -176,8 +178,8 @@ nav {
 ==========Medias=========
 */
 @media (max-width: 685px) {
-  .logo-container img {
-    width: 70px;
+  .logo-container p {
+    font-size: 15pt;
   }
   .signBtn {
     padding: 1px;
