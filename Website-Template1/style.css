@@ -26,17 +26,16 @@ header {
 }
 .logo-container {
   margin: 5px 0px 5px 20px;
+  flex: 1;
 }
 .logo-container img {
-  width: 50%;
+  max-width: 150px;
 }
 .navbar-links,
 .logo-container {
   display: flex;
 }
-.logo-container {
-  flex: 1;
-}
+
 nav {
   flex: 3;
 }
@@ -178,12 +177,12 @@ nav {
 */
 @media (max-width: 685px) {
   .logo-container img {
-    width: 65%;
+    width: 70px;
   }
   .signBtn {
-    padding: 3px;
-    margin-top: 2px;
-    font-size: 8pt;
+    padding: 1px;
+    margin-top: 1px;
+    font-size: 6pt;
   }
   .navbar-link {
     font-size: 12pt;
