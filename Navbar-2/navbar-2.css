@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+}
+
+li,
+a,
+button {
+  color: #edf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Bangers", cursive;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 10px;
+}
+
+.logo {
+  cursor: pointer;
+  max-height: 90px;
+}
+
+.navbarul {
+  list-style: none;
+}
+
+.navbarul li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+.navbarul li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navbarul li a:hover {
+  color: #0088a9;
+}
+.navbutton {
+  padding-top: 20px;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
