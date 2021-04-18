@@ -48,8 +48,10 @@ header {
 .logo-container:hover .logo2 {
   display: inline;
 }
+
+/*Body*/
 .section {
-  height: 500px;
+  height: 400px;
   display: flex;
 }
 .box1,
@@ -58,7 +60,7 @@ header {
 .box4,
 .box5,
 .box6 {
-  height: 500px;
+  height: 400px;
   width: 50%;
 }
 .box1 {
@@ -78,6 +80,82 @@ header {
 }
 .box6 {
   background-color: rgba(105, 255, 168, 0.267);
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  height: auto;
+  background-color: rgb(61, 60, 60);
+}
+.contactUs {
+  flex: 2;
+}
+.contactUs h2 {
+  color: rgb(233, 210, 2);
+  margin-left: 1%;
+}
+.contactUs p {
+  width: 87%;
+  color: rgb(170, 170, 170);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+.inputFname,
+.inputEmail,
+.inputMessage {
+  color: rgb(0, 0, 0);
+  outline: none;
+  padding: 5px;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  border: 2px solid rgb(196, 194, 194);
+  border-radius: 25px;
+  background-color: rgb(211, 211, 211);
+}
+.inputFname,
+.inputEmail {
+  max-width: 450px;
+  min-width: 150px;
+  width: 25%;
+}
+.inputMessage {
+  max-width: 51.2%;
+  min-width: 150px;
+  width: 71.5%;
+}
+
+.inputFname:hover,
+.inputEmail:hover,
+.inputMessage:hover {
+  background-color: rgb(233, 210, 2);
+}
+
+.followUs h2 {
+  color: rgb(233, 210, 2);
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+.followUs {
+  flex: 1;
+}
+.followUs ul {
+  display: flex;
+}
+.followUs li {
+  width: 64px;
+  margin-left: 1%;
+}
+.followUs a {
+  flex-direction: row;
+}
+.followUs img {
+  width: 100%;
+}
+.followUs img:hover {
+  transform: scale(1.2);
 }
 
 /*Medias*/
