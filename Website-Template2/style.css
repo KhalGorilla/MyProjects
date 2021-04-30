@@ -7,12 +7,11 @@
   color: rgb(192, 192, 192);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
+/*-----------------------------Header and Navbar---------------------*/
 header {
   display: flex;
   background-color: rgb(61, 60, 60);
   position: -webkit-sticky;
-  position: sticky;
   top: 0;
   flex: 1;
 }
@@ -49,66 +48,173 @@ header {
   display: inline;
 }
 
-/*Body*/
-.section {
-  height: 1000px;
-  display: flex;
+/*------------------------------------------------Body----------------------------------------*/
+body {
+  background-color: rgb(99, 81, 109);
 }
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------------------------cpuBox-------------------------------*/
 .cpuBox {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 110, 161, 0.39);
+  height: 320px;
   display: flex;
   justify-content: space-between;
-}
-.ryzen {
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
-
   flex: 1;
 }
-.ryzen img {
+/*------------------Ryzen--------------------*/
+.ryzen {
+  margin-left: 7px;
+  margin-right: 7px;
+  text-align: center;
+  flex: 1;
+}
+.ryzen h1 {
+  font-size: 18pt;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.438);
+  color: rgb(190, 0, 0);
+  border-radius: 25px;
+}
+#ryzenImage {
   border-radius: 20px;
 }
+
 .ryzen img:hover {
-  transform: scale(1.02);
-  box-shadow: 5px 5px 20px black;
+  transform: scale(1.001);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
+/*-----------------Intel--------------------*/
 .intel {
-  margin-right: 5px;
+  margin-right: 7px;
   text-align: center;
   flex: 1;
+}
+.intel h1 {
+  font-size: 18pt;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 25px;
+  color: rgb(0, 0, 180);
 }
 .intel img {
   border-radius: 20px;
 }
 .intel img:hover {
-  transform: scale(1.02);
-  box-shadow: 5px 5px 20px black;
+  transform: scale(1.001);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+/*---------------------------------mouseBox--------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  flex: 1;
 }
 
-.box2,
-.box3 {
-  height: 100%;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
   width: 100%;
-}
-.box4 {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(184, 48, 48);
+  text-align: center;
 }
 
-.box2 {
-  background-color: rgba(0, 128, 0, 0.863);
-}
-.box3 {
-  background-color: rgba(208, 223, 0, 0.788);
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-/*Footer*/
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*---------------------------------Footer------------------------------*/
 footer {
   display: flex;
+
   height: auto;
   background-color: rgb(61, 60, 60);
 }
@@ -182,15 +288,21 @@ footer {
   transform: scale(1.2);
 }
 
-/*Medias*/
+/*---------------------------------------Medias--------------------------*/
 @media (max-width: 500px) {
   .link a {
     font-size: 12pt;
     font-weight: 500;
   }
+  .cpuBox h1 {
+    font-size: 12pt;
+  }
 }
 @media (min-width: 1000px) {
   nav {
     flex: 1;
+  }
+  .cpuBox h1 {
+    font-size: 20pt;
   }
 }
