@@ -80,10 +80,10 @@ main {
   color: rgb(190, 0, 0);
   border-radius: 25px;
 }
-.ryzenImage1 {
+.ryzenImage {
   border-radius: 25px;
 }
-.ryzenImage2 {
+.ryzenImageBlur {
   border-radius: 25px;
   position: absolute;
   left: 0;
@@ -91,7 +91,7 @@ main {
   opacity: 0;
   transition: visibility 0s, opacity 0.2s linear;
 }
-.ryzen-container a:hover .ryzenImage2 {
+.ryzen-container a:hover .ryzenImageBlur {
   visibility: visible;
   opacity: 1;
 }
@@ -110,10 +110,10 @@ main {
   border-radius: 25px;
   color: rgb(0, 0, 180);
 }
-.intelImage1 {
+.intelImage {
   border-radius: 25px;
 }
-.intelImage2 {
+.intelImageBlur {
   border-radius: 25px;
   position: absolute;
   left: 0;
@@ -121,7 +121,7 @@ main {
   opacity: 0;
   transition: visibility 0s, opacity 0.2s linear;
 }
-.intel-container a:hover .intelImage2 {
+.intel-container a:hover .intelImageBlur {
   visibility: visible;
   opacity: 1;
 }
