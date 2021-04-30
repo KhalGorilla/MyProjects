@@ -7,6 +7,27 @@
   color: rgb(192, 192, 192);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+/*-----------------------------contactNav----------------------------*/
+.contactNav {
+  width: 95%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.contactNav li {
+  margin-top: 5px;
+  flex: 1;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt;
+}
+.contactAnchor:hover {
+  transition: 400ms;
+  color: rgb(129, 129, 129);
+}
 /*-----------------------------Header and Navbar---------------------*/
 header {
   display: flex;
@@ -50,16 +71,17 @@ header {
 
 /*------------------------------------------------Body----------------------------------------*/
 body {
-  background-color: rgb(109, 81, 81);
+  background-color: black;
 }
 main {
   display: flex;
   flex-direction: column;
+  background-color: rgb(109, 81, 81);
 }
 
 /*----------------------------------cpuBox-------------------------------*/
 .cpuBox {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -74,8 +96,10 @@ main {
   position: relative;
 }
 .ryzen-container h1 {
+  width: 80%;
   font-size: 18pt;
   margin: 10px;
+  margin-left: 10%;
   background-color: rgba(255, 255, 255, 0.438);
   color: rgb(190, 0, 0);
   border-radius: 25px;
@@ -86,7 +110,7 @@ main {
 .ryzenImageBlur {
   border-radius: 25px;
   position: absolute;
-  left: 0;
+  left: 10%;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.2s linear;
@@ -104,8 +128,10 @@ main {
   position: relative;
 }
 .intel-container h1 {
+  width: 80%;
   font-size: 18pt;
   margin: 10px;
+  margin-left: 10%;
   background-color: rgba(255, 255, 255, 0.438);
   border-radius: 25px;
   color: rgb(0, 0, 180);
@@ -116,7 +142,7 @@ main {
 .intelImageBlur {
   border-radius: 25px;
   position: absolute;
-  left: 0;
+  left: 10%;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.2s linear;
@@ -131,7 +157,7 @@ main {
   max-width: 85%;
   position: relative;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   flex: 1;
 }
 
