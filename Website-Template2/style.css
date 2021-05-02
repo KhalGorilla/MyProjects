@@ -76,7 +76,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  background-color: rgb(109, 81, 81);
+  background-color: rgba(255, 255, 255, 0.747);
 }
 
 /*----------------------------------cpuBox-------------------------------*/
@@ -153,14 +153,20 @@ main {
 }
 /*---------------------------------mouseBox--------------------------------*/
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 85%;
   position: relative;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 15px;
   flex: 1;
 }
 
+.h3mouse {
+  text-align: center;
+  margin-top: 80px;
+  color: rgb(0, 8, 122);
+}
 /* Next & previous buttons */
 .prev,
 .next {
@@ -224,7 +230,7 @@ main {
 
 .active,
 .dot:hover {
-  background-color: #a7ca08;
+  background-color: #d0ff00;
 }
 #b30000
 #af1616
@@ -256,10 +262,24 @@ main {
 }
 
 /*--------------------------------box3--------------------------------*/
-.box3 {
-  height: 500px;
+.pc-container {
+  display: flex;
+  background-color: rgb(119, 119, 119);
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
-
+.box p {
+  color: #d3d2d2;
+  text-align: center;
+}
+.box img {
+  width: 50%;
+  margin-left: 25%;
+}
+.box {
+  margin: 5px;
+  width: 30%;
+}
 /*---------------------------------Footer------------------------------*/
 footer {
   display: flex;
