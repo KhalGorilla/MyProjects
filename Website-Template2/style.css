@@ -9,12 +9,12 @@
 }
 /*-----------------------------contactNav----------------------------*/
 .contactNav {
-  width: 95%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   height: 30px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
 .contactNav li {
@@ -73,7 +73,7 @@ header {
 
 /*------------------------------------------------Body----------------------------------------*/
 body {
-  background-color: black;
+  background-color: aliceblue;
 }
 main {
   display: flex;
@@ -232,7 +232,7 @@ main {
 
 .active,
 .dot:hover {
-  background-color: rgb(255, 230, 0);
+  background-color: rgb(0, 98, 143);
 }
 #b30000
 #af1616
@@ -266,12 +266,11 @@ main {
 /*--------------------------------PCs container--------------------------------*/
 .pc-container {
   display: flex;
-  background-color: rgb(119, 119, 119);
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .box p {
-  color: rgb(197, 178, 3);
+  color: rgb(0, 98, 143);
   text-align: center;
 }
 .box img {
@@ -281,6 +280,24 @@ main {
 .box {
   margin: 5px;
   width: 30%;
+}
+/*------------------------------Headphones----------------------------*/
+.headsets {
+  height: auto;
+  margin-top: 100px;
+}
+.headsets img {
+  width: 100%;
+}
+.headsets h2 {
+  margin-bottom: 5px;
+  color: rgb(0, 98, 143);
+  text-align: center;
+}
+.imageBox {
+  width: 33.34%;
+  display: flex;
+  background-color: black;
 }
 /*---------------------------------Footer------------------------------*/
 footer {
@@ -292,8 +309,9 @@ footer {
 .contactUs {
   flex: 2;
 }
-.contactUs h3 {
-  color: rgb(179, 167, 3);
+.contactUs span {
+  font-size: 15pt;
+  color: rgb(0, 174, 255);
   margin-left: 1%;
 }
 .contactUs p {
@@ -334,8 +352,9 @@ footer {
   background-color: rgb(255, 255, 255);
 }
 
-.followUs h3 {
-  color: rgb(179, 167, 3);
+.followUs span {
+  font-size: 15pt;
+  color: rgb(0, 174, 255);
   margin-bottom: 5%;
   margin-left: 2%;
 }
@@ -376,13 +395,13 @@ footer {
   .box p {
     font-size: 10pt;
   }
-  .contactUs h2 {
+  .contactUs span {
     font-size: 12pt;
   }
   .contactUs p {
-    font-size: 10pt;
+    font-size: 9pt;
   }
-  .followUs h2 {
+  .followUs span {
     font-size: 12pt;
   }
   .inputFname,
@@ -393,7 +412,11 @@ footer {
   .followUs img {
     width: 80%;
   }
+  .headsets h2 {
+    font-size: 10pt;
+  }
 }
+
 @media (min-width: 1000px) {
   nav {
     flex: 1;
