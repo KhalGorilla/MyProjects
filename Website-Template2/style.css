@@ -281,9 +281,8 @@ main {
   margin: 5px;
   width: 30%;
 }
-/*------------------------------Headphones----------------------------*/
+/*------------------------------Headsets----------------------------*/
 .headsets {
-  height: auto;
   margin-top: 100px;
 }
 .headsets img {
@@ -294,11 +293,10 @@ main {
   color: rgb(0, 98, 143);
   text-align: center;
 }
-.imageBox {
-  width: 33.34%;
+.headsetBox {
   display: flex;
-  background-color: black;
 }
+
 /*---------------------------------Footer------------------------------*/
 footer {
   display: flex;
