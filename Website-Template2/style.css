@@ -332,16 +332,9 @@ footer {
   border-radius: 10px;
   background-color: rgb(214, 209, 209);
 }
-.inputFname,
+.inputMessage,
 .inputEmail {
-  max-width: 450px;
-  min-width: 150px;
-  width: 25%;
-}
-.inputMessage {
-  max-width: 51.2%;
-  min-width: 150px;
-  width: 71.5%;
+  max-width: 50%;
 }
 
 .inputFname:hover,
@@ -376,7 +369,7 @@ footer {
 /*---------------------------------------Medias--------------------------*/
 @media (max-width: 500px) {
   .contactNav li {
-    font-size: 8pt;
+    font-size: 7pt;
   }
 
   .link a {
@@ -398,6 +391,10 @@ footer {
   }
   .contactUs p {
     font-size: 9pt;
+  }
+  .inputEmail,
+  .inputMessage {
+    height: 15px;
   }
   .followUs span {
     font-size: 12pt;
