@@ -13,7 +13,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  height: 30px;
+  height: 25px;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
@@ -22,6 +22,7 @@
   flex: 1;
   font-family: "Courier New", Courier, monospace;
   font-size: 10pt;
+  margin-left: 10px;
 }
 .contactAnchor:hover {
   transition: 400ms;
@@ -30,6 +31,9 @@
 .contactNav img {
   width: 25px;
   height: 25px;
+  margin-right: 10px;
+}
+.contactAnchor {
   margin-right: 10px;
 }
 /*-----------------------------Header and Navbar---------------------*/
@@ -72,13 +76,11 @@ header {
 }
 
 /*------------------------------------------------Body----------------------------------------*/
-body {
-  background-color: aliceblue;
-}
+
 main {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.747);
+  background-color: rgba(235, 233, 233, 0.747);
 }
 
 /*----------------------------------cpuBox-------------------------------*/
@@ -281,6 +283,9 @@ main {
   margin: 5px;
   width: 30%;
 }
+.box:hover {
+  transform: scale(1.2);
+}
 /*------------------------------Headsets----------------------------*/
 .headsets {
   margin-top: 100px;
@@ -289,7 +294,7 @@ main {
   width: 100%;
 }
 .headsets h2 {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   color: rgb(0, 98, 143);
   text-align: center;
 }
