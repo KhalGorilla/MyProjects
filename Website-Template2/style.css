@@ -1,463 +1,515 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
 * {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  color: rgb(192, 192, 192);
-  font-family: 'Sen', sans-serif;
-  font-weight: 300;
-  font-size: 1.15rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(192, 192, 192);
+    font-family: 'Sen', sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
 }
+
+
 /*-----------------------------contactNav----------------------------*/
+
 .contactNav {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  height: 25px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
+
 .contactNav li {
-  margin-top: 5px;
-  flex: 1;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10pt;
-  margin-left: 10px;
+    margin-top: 5px;
+    flex: 1;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    margin-left: 10px;
 }
+
 .contactAnchor:hover {
-  transition: 400ms;
-  color: rgb(129, 129, 129);
+    transition: 400ms;
+    color: rgb(129, 129, 129);
 }
 
 .contactAnchor {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
+
 /*-----------------------------Header and Navbar---------------------*/
+
 header {
-  display: flex;
-  background-color: rgb(61, 60, 60);
-  flex: 1;
+    display: flex;
+    background-color: rgb(61, 60, 60);
+    flex: 1;
 }
+
 .link {
-  margin-top: 3%;
-  font-size: 13pt;
+    margin-top: 3%;
+    font-size: 13pt;
 }
 
 .link a:hover {
-  color: rgb(0, 112, 163);
-  transition: 600ms;
+    color: rgb(0, 112, 163);
+    transition: 600ms;
 }
+
 .link:hover {
-  transform: scale(1.2);
-  transition: 100ms;
+    transform: scale(1.2);
+    transition: 100ms;
 }
+
 .links {
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
 }
+
 .logo-container {
-  width: 10%;
-  margin: 7px;
-  position: relative;
-  display: inline-block;
+    width: 10%;
+    margin: 7px;
+    position: relative;
+    display: inline-block;
 }
+
 .logo2 {
-  display: none;
-  position: absolute;
-  left: 0;
+    display: none;
+    position: absolute;
+    left: 0;
 }
+
 .logo-container:hover .logo2 {
-  display: inline;
+    display: inline;
 }
+
 
 /*------------------------------------------------Body----------------------------------------*/
 
 main {
-  
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(235, 233, 233, 0.747);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(235, 233, 233, 0.747);
 }
+
 
 /*----------------------------------cpuBox-------------------------------*/
+
 .cpuBox {
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
-}
-/*------------------Ryzen--------------------*/
-.ryzen-container {
-  margin-left: 7px;
-  margin-right: 7px;
-  text-align: center;
-  flex: 1;
-  position: relative;
-}
-.ryzen-container h1 {
-  width: 80%;
-  font-size: 18pt;
-  margin: 10px;
-  margin-left: 10%;
-  background-color: rgb(255, 255, 255);
-  color: rgb(190, 0, 0);
-  border-radius: 25px;
-}
-.ryzenImage {
-  border-radius: 25px;
-}
-.ryzenImageBlur {
-  border-radius: 25px;
-  position: absolute;
-  left: 10%;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.2s linear;
-}
-.ryzen-container a:hover .ryzenImageBlur {
-  visibility: visible;
-  opacity: 1;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
 }
 
+
+/*------------------Ryzen--------------------*/
+
+.ryzen-container {
+    margin-left: 7px;
+    margin-right: 7px;
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.ryzen-container h1 {
+    width: 80%;
+    font-size: 18pt;
+    margin: 10px;
+    margin-left: 10%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(190, 0, 0);
+    border-radius: 25px;
+}
+
+.ryzenImage {
+    border-radius: 25px;
+}
+
+.ryzenImageBlur {
+    border-radius: 25px;
+    position: absolute;
+    left: 10%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+.ryzen-container a:hover .ryzenImageBlur {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 /*-----------------Intel--------------------*/
+
 .intel-container {
-  margin-right: 7px;
-  text-align: center;
-  flex: 1;
-  position: relative;
+    margin-right: 7px;
+    text-align: center;
+    flex: 1;
+    position: relative;
 }
+
 .intel-container h1 {
-  width: 80%;
-  font-size: 18pt;
-  margin: 10px;
-  margin-left: 10%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 25px;
-  color: rgb(0, 0, 180);
+    width: 80%;
+    font-size: 18pt;
+    margin: 10px;
+    margin-left: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    color: rgb(0, 0, 180);
 }
+
 .intelImage {
-  border-radius: 25px;
+    border-radius: 25px;
 }
+
 .intelImageBlur {
-  border-radius: 25px;
-  position: absolute;
-  left: 10%;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.2s linear;
+    border-radius: 25px;
+    position: absolute;
+    left: 10%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
 }
+
 .intel-container a:hover .intelImageBlur {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
+
+
 /*---------------------------------mouseBox--------------------------------*/
+
+
 /* Slideshow container */
 
 .slideshow-container {
-
-  max-width: 85%;
-  position: relative;
-  margin: auto;
-  margin-top: 15px;
-  flex: 1;
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    flex: 1;
 }
-.slideshow-container img{
-  border-radius: 3%;
+
+.slideshow-container img {
+    border-radius: 3%;
 }
 
 .h3mouse {
-  text-align: center;
-  margin-top: 180px;
-  color: rgb(0, 112, 163);
+    text-align: center;
+    margin-top: 180px;
+    color: rgb(0, 112, 163);
 }
+
+
 /* Next & previous buttons */
+
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
+
 
 /* Position the "next button" to the right */
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
+
 
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
 
 /* Caption text */
+
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
+
 
 /* Number text (1/3 etc) */
+
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
+
 /* The dots/bullets/indicators */
+
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(177, 169, 169);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(177, 169, 169);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active,
 .dot:hover {
-  background-color: rgb(0, 112, 163);
+    background-color: rgb(0, 112, 163);
 }
 
 
 /* Fading animation */
+
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
+
 /*--------------------------------PCs container--------------------------------*/
+
 .pc-container {
-  margin-left: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 100px;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
+
 .box p {
-  color: rgb(0, 112, 163);
-  text-align: center;
-  margin-top: 50px;
+    color: rgb(0, 112, 163);
+    text-align: center;
+    margin-top: 50px;
 }
+
 .box img {
-  width: 50%;
-  margin-left: 25%;
+    width: 50%;
+    margin-left: 25%;
 }
+
 .box {
-  margin: 5px;
-  width: 30%;
+    margin: 5px;
+    width: 30%;
 }
+
 .box:hover {
-  transform: scale(1.1);
-  font-size: larger;
+    transform: scale(1.1);
+    font-size: larger;
 }
+
+
 /*------------------------------Headsets----------------------------*/
+
 .headsets {
-  margin-left: 5%;
-  margin-top: 100px;
+    margin-left: 5%;
+    margin-top: 100px;
 }
+
 .headsets img {
-  width: 100%;
+    width: 100%;
 }
 
 .headsets h2 {
-  margin-bottom: 25px;
-  color: rgb(0, 112, 163);
-  text-align: center;
+    margin-bottom: 25px;
+    color: rgb(0, 112, 163);
+    text-align: center;
 }
+
 .headsetBox {
-  display: flex;
+    display: flex;
 }
+
 
 /*---------------------------------Footer------------------------------*/
+
 footer {
-  display: flex;
-  height: auto;
-  background-color: rgb(61, 60, 60);
-}
-.contactUs {
-  flex: 2;
-}
-.contactUs span {
-  font-size: 14pt;
-  color: rgb(3, 137, 199);
-  margin-left: 1%;
-}
-.contactUs p {
-  width: 87%;
-  color: rgb(170, 170, 170);
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  font-size: 10pt;
+    display: flex;
+    height: auto;
+    background-color: rgb(61, 60, 60);
 }
 
-.inputFname,
+.contactUs {
+    flex: 2;
+}
+
+.contactUs span {
+    font-size: 1rem;
+    color: rgb(3, 137, 199);
+    margin-left: 1%;
+}
+
+.contactUs p {
+    width: 87%;
+    color: rgb(170, 170, 170);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    font-size: 0.7rem;
+}
+
 .inputEmail,
 .inputMessage {
-  color: rgb(0, 0, 0);
-  outline: none;
-  padding: 5px;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  border: 2px solid rgb(196, 194, 194);
-  border-radius: 10px;
-  background-color: rgb(214, 209, 209);
-}
-.inputMessage,
-.inputEmail {
-  max-width: 50%;
+    color: rgb(0, 0, 0);
+    outline: none;
+    padding: 5px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    border: 2px solid rgb(196, 194, 194);
+    border-radius: 10px;
+    background-color: rgb(214, 209, 209);
+    max-width: 30%;
 }
 
-.inputFname:hover,
 .inputEmail:hover,
 .inputMessage:hover {
-  background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .followUs span {
-  font-size: 14pt;
-  color: rgb(3, 137, 199);;
-  margin-bottom: 5%;
-  margin-left: 2%;
+    font-size: 1rem;
+    color: rgb(3, 137, 199);
+    margin-bottom: 5%;
+    margin-left: 2%;
 }
+
 .followUs {
-  flex: 1;
+    flex: 1;
 }
+
 .followUs ul {
-  display: flex;
+    display: flex;
 }
+
 .followUs li {
-  margin-left: 1%;
+    margin-left: 1%;
 }
 
 .followUs img {
-  width: 80%;
+    width: 80%;
 }
+
 .followUs img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
+
 
 /*---------------------------------------Medias--------------------------*/
+
 @media (max-width: 600px) {
-  
-  .contactNav li {
-    font-size: 7pt;
-  }
- 
-  .link a {
-    font-size: 8pt;
-    font-weight: 100;
-  }
-  
-  .cpuBox h1 {
-    font-size: 12pt;
-  }
-
-  .h3mouse {
-    font-size: 12pt;
-   
-  }
-  .box p {
-    font-size: 10pt;
-  }
-  .contactUs span {
-    font-size: 10pt;
-  }
-  .contactUs p {
-    font-size: 7pt;
-  }
-  .inputEmail,
-  .inputMessage {
-    height: 15px;
-  }
-  .followUs span {
-    font-size: 10pt;
-  }
-  .inputFname,
-  .inputEmail,
-  .inputMessage {
-    width: 50%;
-    font-size: 6pt;
-  }
-
-  .followUs img {
-    width: 80%;
-  }
-  .headsets h2 {
-    font-size: 10pt;
-  }
+    .contactNav li {
+        font-size: 7pt;
+    }
+    .link a {
+        font-size: 8pt;
+        font-weight: 100;
+    }
+    .cpuBox h1 {
+        font-size: 12pt;
+    }
+    .h3mouse {
+        font-size: 12pt;
+    }
+    .box p {
+        font-size: 10pt;
+    }
+    .contactUs span {
+        font-size: 10pt;
+    }
+    .contactUs p {
+        font-size: 7pt;
+    }
+    .inputEmail,
+    .inputMessage {
+        height: 10px;
+    }
+    .followUs span {
+        font-size: 10pt;
+    }
+    .inputEmail,
+    .inputMessage {
+        width: 50%;
+    }
+    .followUs img {
+        width: 80%;
+    }
+    .headsets h2 {
+        font-size: 10pt;
+    }
 }
 
 @media (min-width: 1000px) {
-  nav {
-    flex: 1;
-  }
-  
-  .cpuBox h1 {
-    font-size: 18pt;
-  }
-  .inputFname,
-  .inputEmail,
-  .inputMessage {
-    font-size: 8pt;
-  }
-
-
+    nav {
+        flex: 1;
+    }
+    .cpuBox h1 {
+        font-size: 18pt;
+    }
+    .inputEmail,
+    .inputMessage {
+        font-size: 0.7rem;
+    }
 }
 
-@media (max-width:900px){
-  *{
-    font-size: 1.02rem;
-  }
-  .h3mouse {
-    margin-top: 50px;
-  }
-  .inputFname,
-  .inputEmail,
-  .inputMessage {
-    font-size: 8pt;
-  }
+@media (max-width:900px) {
+    * {
+        font-size: 1.02rem;
+    }
+    .h3mouse {
+        margin-top: 50px;
+    }
+    .inputFname,
+    .inputEmail,
+    .inputMessage {
+        font-size: 8pt;
+    }
 }
