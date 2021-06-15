@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +6,9 @@
   text-decoration: none;
   box-sizing: border-box;
   color: rgb(192, 192, 192);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Sen', sans-serif;
+  font-weight: 300;
+  font-size: 1.15rem;
 }
 /*-----------------------------contactNav----------------------------*/
 .contactNav {
@@ -28,11 +31,7 @@
   transition: 400ms;
   color: rgb(129, 129, 129);
 }
-.contactNav img {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-}
+
 .contactAnchor {
   margin-right: 10px;
 }
@@ -48,7 +47,7 @@ header {
 }
 
 .link a:hover {
-  color: rgb(233, 210, 2);
+  color: rgb(0, 112, 163);
   transition: 600ms;
 }
 .link:hover {
@@ -78,6 +77,7 @@ header {
 /*------------------------------------------------Body----------------------------------------*/
 
 main {
+  
   display: flex;
   flex-direction: column;
   background-color: rgba(235, 233, 233, 0.747);
@@ -85,8 +85,9 @@ main {
 
 /*----------------------------------cpuBox-------------------------------*/
 .cpuBox {
-  width: 100%;
+  width: 80%;
   margin: auto;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   flex: 1;
@@ -104,7 +105,7 @@ main {
   font-size: 18pt;
   margin: 10px;
   margin-left: 10%;
-  background-color: rgba(255, 255, 255, 0.438);
+  background-color: rgb(255, 255, 255);
   color: rgb(190, 0, 0);
   border-radius: 25px;
 }
@@ -136,7 +137,7 @@ main {
   font-size: 18pt;
   margin: 10px;
   margin-left: 10%;
-  background-color: rgba(255, 255, 255, 0.438);
+  background-color: rgb(255, 255, 255);
   border-radius: 25px;
   color: rgb(0, 0, 180);
 }
@@ -159,17 +160,21 @@ main {
 /* Slideshow container */
 
 .slideshow-container {
+
   max-width: 85%;
   position: relative;
   margin: auto;
   margin-top: 15px;
   flex: 1;
 }
+.slideshow-container img{
+  border-radius: 3%;
+}
 
 .h3mouse {
   text-align: center;
-  margin-top: 80px;
-  color: rgb(0, 98, 143);
+  margin-top: 180px;
+  color: rgb(0, 112, 163);
 }
 /* Next & previous buttons */
 .prev,
@@ -234,10 +239,9 @@ main {
 
 .active,
 .dot:hover {
-  background-color: rgb(0, 98, 143);
+  background-color: rgb(0, 112, 163);
 }
-#b30000
-#af1616
+
 
 /* Fading animation */
 .fade {
@@ -267,13 +271,15 @@ main {
 
 /*--------------------------------PCs container--------------------------------*/
 .pc-container {
+  margin-left: 5%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
 }
 .box p {
-  color: rgb(0, 98, 143);
+  color: rgb(0, 112, 163);
   text-align: center;
+  margin-top: 50px;
 }
 .box img {
   width: 50%;
@@ -284,18 +290,21 @@ main {
   width: 30%;
 }
 .box:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  font-size: larger;
 }
 /*------------------------------Headsets----------------------------*/
 .headsets {
+  margin-left: 5%;
   margin-top: 100px;
 }
 .headsets img {
   width: 100%;
 }
+
 .headsets h2 {
   margin-bottom: 25px;
-  color: rgb(0, 98, 143);
+  color: rgb(0, 112, 163);
   text-align: center;
 }
 .headsetBox {
@@ -305,7 +314,6 @@ main {
 /*---------------------------------Footer------------------------------*/
 footer {
   display: flex;
-
   height: auto;
   background-color: rgb(61, 60, 60);
 }
@@ -313,8 +321,8 @@ footer {
   flex: 2;
 }
 .contactUs span {
-  font-size: 15pt;
-  color: rgb(0, 174, 255);
+  font-size: 14pt;
+  color: rgb(3, 137, 199);
   margin-left: 1%;
 }
 .contactUs p {
@@ -323,6 +331,7 @@ footer {
   margin-top: 1%;
   margin-bottom: 1%;
   margin-left: 1%;
+  font-size: 10pt;
 }
 
 .inputFname,
@@ -349,8 +358,8 @@ footer {
 }
 
 .followUs span {
-  font-size: 15pt;
-  color: rgb(0, 174, 255);
+  font-size: 14pt;
+  color: rgb(3, 137, 199);;
   margin-bottom: 5%;
   margin-left: 2%;
 }
@@ -372,43 +381,48 @@ footer {
 }
 
 /*---------------------------------------Medias--------------------------*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  
   .contactNav li {
     font-size: 7pt;
   }
-
+ 
   .link a {
     font-size: 8pt;
     font-weight: 100;
   }
+  
   .cpuBox h1 {
     font-size: 12pt;
   }
 
   .h3mouse {
     font-size: 12pt;
+   
   }
   .box p {
     font-size: 10pt;
   }
   .contactUs span {
-    font-size: 12pt;
+    font-size: 10pt;
   }
   .contactUs p {
-    font-size: 9pt;
+    font-size: 7pt;
   }
   .inputEmail,
   .inputMessage {
     height: 15px;
   }
   .followUs span {
-    font-size: 12pt;
+    font-size: 10pt;
   }
   .inputFname,
   .inputEmail,
   .inputMessage {
     width: 50%;
+    font-size: 6pt;
   }
+
   .followUs img {
     width: 80%;
   }
@@ -421,7 +435,29 @@ footer {
   nav {
     flex: 1;
   }
+  
   .cpuBox h1 {
-    font-size: 20pt;
+    font-size: 18pt;
+  }
+  .inputFname,
+  .inputEmail,
+  .inputMessage {
+    font-size: 8pt;
+  }
+
+
+}
+
+@media (max-width:900px){
+  *{
+    font-size: 1.02rem;
+  }
+  .h3mouse {
+    margin-top: 50px;
+  }
+  .inputFname,
+  .inputEmail,
+  .inputMessage {
+    font-size: 8pt;
   }
 }
