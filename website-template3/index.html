@@ -5,20 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/website-template3/script.js" defer></script>
     <link href="/website-template3/style.css" rel="stylesheet" type="text/css">
     <title>welcome</title>
 </head>
 
-<nav>
-    <div class="logo-container"><img src="/website-template3/img/logo.png" width="70px"></div>
-    <div class="search-container"><span>Search:</span><input type="search" placeholder="Type here..."></div>
-    <button class="loginBtn">Log in</button>
-    <a href="#" class="menue"><img class="menueBar" src="/website-template3/img/menue bar.png" width="30%"></a>
+<nav class="navbar">
+    <div class="logo">Logo</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <div class="searchDiv">Search: <input type="search" placeholder="Type here..." class="searchBar"></div>
+            <button class="logBtn">Log in</button>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Accessories </a></li>
+        </ul>
+    </div>
 </nav>
 
-
 <body>
+    <div class="main-accessories">
+        <div class="cpu box">
+            <a href="#">
+                <p>CPU</p><img src="/website-template3/img/CPU.png"></a>
+        </div>
+        <div class="gpu box">
+            <a href="#">
+                <p>GPU</p><img src="/website-template3/img/GPU.png"></a>
+        </div>
+        <div class="ram box">
+            <a href="#">
+                <p>RAM</p><img src="/website-template3/img/RAM.png"></a>
+        </div>
 
+        <div class="psu box">
+            <a href="#">
+                <p>Mic</p><img src="/website-template3/img/mic.png"></a>
+        </div>
+        <div class="psu box">
+            <a href="#">
+                <p>PSU</p><img src="/website-template3/img/PSU.png"></a>
+        </div>
+    </div>
 </body>
 
 </html>

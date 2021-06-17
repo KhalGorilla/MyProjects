@@ -1,66 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 * {
     margin: 0;
     padding: 0;
     outline: none;
-    font-family: 'Sen', sans-serif;
+    font-family: Raleway;
     font-weight: 600;
     text-decoration: none;
     list-style: none;
 }
 
-nav {
+
+/*---------------------Navbar--------------------*/
+
+.navbar {
     display: flex;
-    flex-direction: row;
-    background-color: #5E5E5E;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
-}
-
-.logo-container {
-    flex: 3;
-}
-
-.search-container {
-    flex: 4;
-}
-
-.search-container span {
-    margin-right: 8px;
+    background-color: #5E5E5E;
     color: white;
 }
 
-.search-container input {
-    border: none;
+.logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #929292;
+}
+
+.logBtn {
+    padding: 5px 25px;
+    margin-top: 12px;
+    margin-right: 5px;
+    height: 30px;
     border-radius: 25px;
-    background-color: rgba(240, 248, 255, 0.616);
-    padding: 2px 2px 2px 10px;
-    font-size: .9rem;
-    width: 50%;
-}
-
-.search-container input:hover {
-    background-color: rgb(231, 231, 231);
-}
-
-.loginBtn {
-    flex: 1;
-    border-radius: 25px;
-    padding: 7px 8px;
+    background-color: rgb(224, 224, 224);
     border: none;
-    margin-left: 2%;
 }
 
-.loginBtn:hover {
-    background-color: rgba(240, 240, 240, 0.705);
+.logBtn:hover {
+    background-color: rgb(170, 169, 169);
+    cursor: pointer;
 }
 
-.menue {
-    flex: 1;
-    margin-left: 10%;
+.searchDiv {
+    margin-top: 17px;
+    margin-right: 25px;
 }
 
-.menue img {
-    margin-top: 5px;
-    min-width: 40px;
+.searchBar {
+    border-radius: 25px;
+    height: 20px;
+    border: none;
+    padding: 5px;
+}
+
+.searchBar:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/*--------------------Body------main accessories------------*/
+
+.main-accessories {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.main-accessories .box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 25px;
+}
+
+.main-accessories img {
+    width: 100%;
+}
+
+.main-accessories p {
+    text-align: center;
+    font-size: 16pt;
+}
+
+
+/*---------------------Medias--------------------*/
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .logBtn {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .searchDiv {
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 }
