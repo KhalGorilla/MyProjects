@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 * {
     margin: 0;
     padding: 0;
     outline: none;
-    font-family: Raleway;
+    font-family: 'Quintessential', cursive;
     font-weight: 600;
     text-decoration: none;
     list-style: none;
@@ -101,33 +101,62 @@
 }
 
 
-/*--------------------Body------main accessories------------*/
+/*--------------------Body-----------------*/
 
-.main-accessories {
+
+/*-----------------main parts-----------*/
+
+.main-parts {
     display: flex;
     flex-direction: row;
     margin: auto;
-    justify-content: space-evenly;
+    margin-top: 30px;
+    justify-content: center;
     width: 100%;
 }
 
-.main-accessories .box {
-    border: 1px solid black;
-    margin: 5px;
-    padding: 25px;
+.main-parts .box {
+    border: 1px solid rgb(156, 156, 156);
+    background-color: #DCDCDC;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    border-radius: 40px;
+    width: 150px;
 }
 
-.main-accessories img {
+.main-parts img {
+    display: flex;
     width: 100%;
 }
 
-.main-accessories p {
+.main-parts p {
+    color: black;
     text-align: center;
-    font-size: 16pt;
+    font-size: 1rem;
+}
+
+
+/*-----------------middle section img-----------*/
+
+.middleSection {
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    min-width: 400px;
 }
 
 
 /*---------------------Medias--------------------*/
+
+@media(max-width:400px) {}
+
+@media (max-width:450px) {
+    .main-parts p {
+        font-size: smaller;
+    }
+}
 
 @media (max-width: 800px) {
     .navbar {
@@ -163,5 +192,8 @@
         margin: auto;
         margin-bottom: 10px;
         margin-top: 10px;
+    }
+    .main-parts .box {
+        border-radius: 20px;
     }
 }
