@@ -1,414 +1,417 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-/*---------------------Navbar--------------------*/
-
-.navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #5E5E5E;
-    color: white;
-}
-
-.logo {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
-
-.navbar-links {
-    height: 100%;
-}
-
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-}
-
-.navbar-links li:hover {
-    background-color: #929292;
-}
-
-.logBtn {
-    padding: 5px 25px;
-    margin-top: 12px;
-    margin-right: 5px;
-    height: 30px;
-    border-radius: 25px;
-    background-color: rgb(224, 224, 224);
-    border: none;
-}
-
-.logBtn:hover {
-    background-color: rgb(170, 169, 169);
-    cursor: pointer;
-}
-
-.searchDiv {
-    margin-top: 17px;
-    margin-right: 25px;
-}
-
-.searchBar {
-    border-radius: 25px;
-    height: 20px;
-    border: none;
-    padding: 5px;
-}
-
-.searchBar:hover {
-    background-color: rgb(204, 204, 204);
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-
-/*-------------------------------------Body--------------------------------------*/
-
-
-/*-----------------main parts-----------*/
-
-.main-parts {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    margin-top: 30px;
-    justify-content: center;
-    width: 80%;
-}
-
-.main-parts .box {
-    border: 1px solid rgb(156, 156, 156);
-    background-color: #DCDCDC;
-    margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 20px;
-    border-radius: 25px;
-    width: 150px;
-}
-
-.main-parts .box:hover {
-    transform: scale(1.1);
-    transition: 200ms;
-}
-
-.main-parts img {
-    display: flex;
-    width: 100%;
-}
-
-.main-parts p {
-    color: black;
-    text-align: center;
-    font-size: 1rem;
-}
-
-
-/*-----------------middle section img-----------*/
-
-.middleSection {
-    width: 80%;
-    margin: auto;
-    margin-top: 10%;
-    display: flex;
-}
-
-.middleSection img {
-    width: 100%;
-    margin: auto;
-}
-
-
-/*---------------sign up section----------------*/
-
-.signupSection {
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: 10%;
-    background: url(img/signupSection.png);
-    background-repeat: no-repeat;
-}
-
-.signupSection .paragraph {
-    padding: 10px;
-    width: 40%;
-    height: 200px;
-    overflow: hidden;
-    font-size: 1rem;
-}
-
-.signupSection .signupForm {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.signupSection form {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-}
-
-.signupSection input {
-    border-radius: 20px;
-    border: none;
-    font-size: 1rem;
-    padding: 1px;
-    padding-left: 5px;
-}
-
-.signupSection input:hover {
-    background-color: rgb(206, 206, 206);
-}
-
-.signupSection button {
-    margin-top: 15px;
-    padding: 10px 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #5f5f5f;
-    font-size: 1rem;
-    color: white;
-}
-
-.signupSection button:hover {
-    background-color: #2c2c2c;
-}
-
-
-/*-------------Accessories Section---------------*/
-
-.accessoriesHeader {
-    background-color: #DCDCDC;
-    width: 30%;
-    max-width: 20%;
-    padding: 5px;
-    border: 1px solid rgb(143, 143, 143);
-    border-radius: 25px;
-    margin: auto;
-    margin-top: 100px;
-    text-align: center;
-}
-
-.accessoriesSection1,
-.accessoriesSection2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: auto;
-}
-
-.accessoriesBox {
-    margin: auto;
-    background-color: #f0efef;
-    border: 1px solid rgb(202, 202, 202);
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    border-radius: 25px;
-}
-
-.accessoriesBox:hover {
-    transform: scale(1.1);
-    transition: 200ms;
-}
-
-.accessoriesBox img {
-    width: 100%;
-}
-
-
-/*--------------------------------footer---------------------------------*/
-
-.footer {
-    background-color: #4b4a4a;
-    color: rgb(255, 255, 255);
-    display: flex;
-    margin-top: 150px;
-    height: auto;
-    font-size: 10pt;
-}
-
-.footer span {
-    font-size: 14pt;
-}
-
-.explore-links,
-.follow-links,
-.legal-links {
-    margin-left: 5px;
-    flex: 1;
-    width: fit-content;
-    height: fit-content;
-}
-
-.footer a {
-    color: rgb(192, 190, 190);
-}
-
-.footer a:hover {
-    color: white;
-}
-
-.contact {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact span {
-    font-size: 12pt;
-}
-
-.copyright {
-    margin-right: 5px;
-    flex: 2;
-    position: relative;
-    font-size: 8pt;
-}
-
-.copyright div {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-
-/*---------------------Medias--------------------*/
-
-@media(max-width:400px) {
-    .main-parts {
-        flex-wrap: wrap;
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
     }
-    .main-parts .box {
-        width: 15%;
-        margin: auto;
-        margin: 5px;
-    }
-    .middleSection {
-        width: 90%;
-    }
-}
-
-@media (max-width:450px) {
-    .main-parts p {
-        font-size: 8pt;
-    }
-    .navbar-links {
-        font-size: 8pt;
-    }
-    .signupSection p {
-        font-size: 8pt;
-    }
-    .signupForm form {
-        font-size: 8pt;
-    }
-    .signupForm button {
-        font-size: 8pt;
-    }
-    .accessoriesHeader {
-        max-width: 25%;
-    }
-    .accessoriesSection span {
-        font-size: 10pt;
-    }
-    .accessoriesSection1,
-    .accessoriesSection2 {
-        flex-flow: wrap;
-    }
-    .accessoriesBox {
-        width: 20%;
-    }
-}
-
-@media (max-width: 800px) {
+    /*---------------------Navbar--------------------*/
+    
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #363636;
+        color: white;
     }
+    
+    .logo {
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+    
+    .navbar-links {
+        height: 100%;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+    }
+    
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+        background-color: #575656;
+    }
+    
+    .logBtn {
+        padding: 5px 25px;
+        margin-top: 12px;
+        margin-right: 5px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: rgb(224, 224, 224);
+        border: none;
+    }
+    
+    .logBtn:hover {
+        background-color: rgb(170, 169, 169);
+        cursor: pointer;
+    }
+    
+    .searchDiv {
+        margin-top: 17px;
+        margin-right: 25px;
+    }
+    
+    .searchBar {
+        border-radius: 25px;
+        height: 20px;
+        border: none;
+        padding: 5px;
+    }
+    
+    .searchBar:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
     .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    /*-------------------------------------Body--------------------------------------*/
+    /*-----------------main parts-----------*/
+    
+    .main-parts {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 30px;
+        justify-content: center;
+        width: 80%;
+    }
+    
+    .main-parts .box {
+        border: 1px solid rgb(156, 156, 156);
+        background-color: #cacaca;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+        border-radius: 25px;
+        width: 150px;
+    }
+    
+    .main-parts .box:hover {
+        transform: scale(1.1);
+        transition: 200ms;
+    }
+    
+    .main-parts img {
+        display: flex;
+        width: 100%;
+    }
+    
+    .main-parts p {
+        color: black;
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*-----------------middle section img-----------*/
+    
+    .middleSection {
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
         display: flex;
     }
-    .navbar-links {
-        display: none;
+    
+    .middleSection img {
         width: 100%;
+        margin: auto;
     }
-    .navbar-links ul {
+    /*---------------sign up section----------------*/
+    
+    .signupSection {
+        display: flex;
         width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 10%;
+        background: url(img/signupSection.png);
+        background-repeat: no-repeat;
+    }
+    
+    .signupSection .paragraph {
+        padding: 10px;
+        width: 50%;
+        height: 200px;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+    
+    .signupSection .signupForm {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .signupSection form {
+        display: flex;
         flex-direction: column;
+        font-size: 1rem;
     }
-    .navbar-links ul li {
+    
+    .signupSection input {
+        border-radius: 20px;
+        border: none;
+        font-size: 1rem;
+        padding: 1px;
+        padding-left: 5px;
+    }
+    
+    .signupSection input:hover {
+        background-color: rgb(206, 206, 206);
+    }
+    
+    .signupSection button {
+        margin-top: 15px;
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: #5f5f5f;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .signupSection button:hover {
+        background-color: #2c2c2c;
+    }
+    /*-------------Accessories Section---------------*/
+    
+    .accessoriesHeader {
+        background-color: #eeebeb;
+        width: 30%;
+        max-width: 20%;
+        padding: 5px;
+        border: 1px solid rgb(143, 143, 143);
+        border-radius: 25px;
+        margin: auto;
+        margin-top: 100px;
         text-align: center;
     }
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-    .navbar-links.active {
+    
+    .accessoriesSection1,
+    .accessoriesSection2 {
         display: flex;
-    }
-    .logBtn {
-        width: 30%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
         margin: auto;
-        margin-bottom: 10px;
     }
-    .searchDiv {
+    
+    .accessoriesBox {
         margin: auto;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        background-color: #cacaca;
+        border: 1px solid rgb(202, 202, 202);
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 25px;
     }
-    .signupSection .paragraph {
+    
+    .accessoriesBox:hover {
+        transform: scale(1.1);
+        transition: 200ms;
+    }
+    
+    .accessoriesBox img {
+        width: 100%;
+    }
+    /*--------------------------------footer---------------------------------*/
+    
+    .footer {
+        background-color: #363636;
+        color: rgb(255, 255, 255);
+        display: flex;
+        margin-top: 150px;
+        height: auto;
         font-size: 10pt;
     }
-    .main-parts .box {
-        border-radius: 15px;
+    
+    .footer p {
+        font-size: 14pt;
     }
-    .footer {
-        font-size: 6pt;
+    
+    .explore-links,
+    .follow-links,
+    .legal-links {
+        margin-left: 5px;
+        flex: 1;
+        width: fit-content;
+        height: fit-content;
     }
-    .footer span {
+    
+    .footer a {
+        color: rgb(192, 190, 190);
+    }
+    
+    .footer a:hover {
+        color: white;
+    }
+    
+    .contact {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact p {
+        font-size: 12pt;
+    }
+    
+    .copyright {
+        margin-right: 5px;
+        flex: 2;
+        position: relative;
         font-size: 8pt;
     }
-    .footer .copyright {
-        font-size: 4pt;
+    
+    .copyright div {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
-}
+    /*---------------------Medias--------------------*/
+    
+    @media(max-width:400px) {
+        .main-parts {
+            flex-wrap: wrap;
+        }
+        .main-parts .box {
+            width: 15%;
+            margin: auto;
+            margin: 5px;
+        }
+        .middleSection {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width:450px) {
+        .main-parts p {
+            font-size: 8pt;
+        }
+        .navbar-links {
+            font-size: 8pt;
+        }
+        .signupSection p {
+            font-size: 8pt;
+        }
+        .signupForm form {
+            font-size: 8pt;
+        }
+        .signupForm button {
+            font-size: 8pt;
+        }
+        .accessoriesHeader {
+            max-width: 25%;
+        }
+        .accessoriesSection span {
+            font-size: 10pt;
+        }
+        .accessoriesSection1,
+        .accessoriesSection2 {
+            flex-flow: wrap;
+        }
+        .accessoriesBox {
+            width: 20%;
+        }
+    }
+    
+    @media(max-width:485px) {
+        .explore-links,
+        .follow-links,
+        .legal-links {
+            font-size: 7pt;
+        }
+        .footerHeader {
+            font-size: 9pt;
+        }
+        .contact p {
+            font-size: 7pt;
+            margin-top: 5px;
+        }
+        .contact h4 {
+            font-size: 9pt;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .toggle-button {
+            display: flex;
+        }
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+        .navbar-links ul li {
+            text-align: center;
+        }
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+        .navbar-links.active {
+            display: flex;
+        }
+        .logBtn {
+            width: 30%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .searchDiv {
+            margin: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .signupSection .paragraph {
+            font-size: 10pt;
+        }
+        .main-parts .box {
+            border-radius: 15px;
+        }
+        .footer {
+            font-size: 10pt;
+        }
+        .footer span {
+            font-size: 10pt;
+        }
+        .footer .copyright {
+            font-size: 7pt;
+        }
+    }
