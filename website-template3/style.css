@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 * {
     margin: 0;
     padding: 0;
     outline: none;
-    font-family: 'Quintessential', cursive;
-    font-weight: 600;
+    font-family: cursive;
     text-decoration: none;
     list-style: none;
 }
@@ -119,11 +117,16 @@
     border: 1px solid rgb(156, 156, 156);
     background-color: #DCDCDC;
     margin: auto;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 20px;
-    border-radius: 40px;
+    border-radius: 25px;
     width: 150px;
+}
+
+.main-parts .box:hover {
+    transform: scale(1.1);
+    transition: 200ms;
 }
 
 .main-parts img {
@@ -148,6 +151,7 @@
 }
 
 .middleSection img {
+    width: 100%;
     margin: auto;
 }
 
@@ -158,7 +162,8 @@
     display: flex;
     width: 100%;
     height: auto;
-    margin-top: 15%;
+    margin: auto;
+    margin-top: 10%;
     background: url(/website-template3/img/signupSection.png);
     background-repeat: no-repeat;
 }
@@ -187,6 +192,11 @@
     border: none;
     font-size: 1rem;
     padding: 1px;
+    padding-left: 5px;
+}
+
+.signupSection input:hover {
+    background-color: rgb(206, 206, 206);
 }
 
 .signupSection button {
@@ -238,8 +248,69 @@
     border-radius: 25px;
 }
 
+.accessoriesBox:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
 .accessoriesBox img {
     width: 100%;
+}
+
+
+/*--------------------------------footer---------------------------------*/
+
+.footer {
+    background-color: #4b4a4a;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 150px;
+    height: auto;
+    font-size: 10pt;
+}
+
+.footer span {
+    font-size: 14pt;
+}
+
+.explore-links,
+.follow-links,
+.legal-links {
+    margin-left: 5px;
+    flex: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.footer a {
+    color: rgb(192, 190, 190);
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact span {
+    font-size: 12pt;
+}
+
+.copyright {
+    margin-right: 5px;
+    flex: 2;
+    position: relative;
+    font-size: 8pt;
+}
+
+.copyright div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
@@ -255,11 +326,7 @@
         margin: 5px;
     }
     .middleSection {
-        width: 100%;
-    }
-    .middleSection img {
-        position: relative;
-        left: 20px;
+        width: 90%;
     }
 }
 
@@ -278,6 +345,9 @@
     }
     .signupForm button {
         font-size: 8pt;
+    }
+    .accessoriesHeader {
+        max-width: 25%;
     }
     .accessoriesSection span {
         font-size: 10pt;
@@ -326,7 +396,19 @@
         margin-bottom: 10px;
         margin-top: 10px;
     }
+    .signupSection .paragraph {
+        font-size: 10pt;
+    }
     .main-parts .box {
-        border-radius: 20px;
+        border-radius: 15px;
+    }
+    .footer {
+        font-size: 6pt;
+    }
+    .footer span {
+        font-size: 8pt;
+    }
+    .footer .copyright {
+        font-size: 4pt;
     }
 }
