@@ -146,7 +146,7 @@
 /*-----------------middle section img-----------*/
 
 .pc-container {
-    margin-left: 5%;
+    margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 100px;
@@ -262,7 +262,7 @@
 
 .accessoriesBox {
     margin: auto;
-    background-color: #cacaca;
+    background-color: #ffffff;
     border: 1px solid rgb(202, 202, 202);
     margin-top: 20px;
     margin-left: 10px;
@@ -338,21 +338,24 @@
     right: 0;
 }
 
+.footerLogo {
+    flex: 1;
+    max-width: 100px;
+    margin: auto;
+}
+
 
 /*----------animation--------*/
 
 @keyframes example {
     0% {
-        background-color: #cacaca;
+        background-color: #ffffff;
     }
     25% {
         background-color: rgb(196, 196, 196);
     }
     50% {
         background-color: rgb(184, 184, 184);
-    }
-    75% {
-        background-color: rgb(170, 170, 170);
     }
 }
 
@@ -401,6 +404,9 @@
     }
     .accessoriesBox {
         width: 20%;
+    }
+    .footer p {
+        font-size: 8pt;
     }
 }
 
