@@ -161,7 +161,7 @@ body {
 .pc p {
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .pc img {
@@ -394,7 +394,7 @@ body {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:480px) {
     .main-parts p {
         font-size: 8pt;
     }
@@ -424,6 +424,9 @@ body {
         width: 20%;
     }
     .footer p {
+        font-size: 8pt;
+    }
+    .pc-container {
         font-size: 8pt;
     }
 }
